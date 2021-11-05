@@ -1,0 +1,31 @@
+#about{
+	display: block;
+	top: -75px;
+	position: relative;
+}
+
+#about-sec{
+	margin-bottom: -13px;
+	background-color: #D3DDD2;
+	background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url('/assets/img/about-banner3.jpg') no-repeat;
+	background-position: center center;
+}
+
+.section-padding{
+	padding: 60px 0px;
+}
+
+.abt-list{
+	padding-top: 15px;
+}
+
+.abt-list li{
+	padding: 5px 0px;
+	font-size: 15px;
+	font-weight: 600;
+	list-style: none;
+}
+
+.about-text{
+	font-size: 18px;
+}

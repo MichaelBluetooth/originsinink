@@ -1,0 +1,23 @@
+#testimonial{
+  background-color: #D3DDD2;
+}
+
+.test-sec blockquote {
+    background: white;
+    display: block;
+    font-size: 14px;
+    padding: 15px;
+}
+
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 16px;
+    border-left: 5px solid #00BFB2;
+}
+
+.test-sec span.testimonials-name {
+    color: #62646f;
+    font-weight: 600;
+    margin: 16px 0 5px;
+}

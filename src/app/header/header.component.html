@@ -1,0 +1,29 @@
+<div class="header">
+  <div class="bg-color">
+    <header id="home">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" (click)="isCollapsed = !isCollapsed">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            <a class="navbar-brand" [routerLink]="['/']" fragment="home">Origins In Ink</a>
+          </div>
+          <div id="menu" class="collapse navbar-collapse" [collapse]="isCollapsed">
+            <ul class="nav navbar-nav navbar-right navbar-border">
+              <li><a [class.active]="isActive('home')" [routerLink]="['/']" fragment="home">Home</a></li>
+              <li><a [class.active]="isActive('about')" [routerLink]="['/']" fragment="about">About</a></li>
+              <li><a [class.active]="isActive('portfolio')" [routerLink]="['/']" fragment="portfolio">Portfolio</a></li>
+              <li><a [class.active]="isActive('testimonial')" [routerLink]="['/']" fragment="testimonial">Testimonials</a></li>
+              <li><a [class.active]="isActive('contact')" [routerLink]="['/']" fragment="contact">Contact</a></li>
+              <li><a [class.active]="isActive('history')" [routerLink]="['/history']">History</a></li>
+              <li><a>315-399-5116</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+</div>

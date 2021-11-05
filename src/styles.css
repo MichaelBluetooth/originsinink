@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+	line-height: 1.4;
+	font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+	font-weight: 400;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+    outline: none;
+}
+a:hover, a:focus, a:active{
+	text-decoration: none;
+    outline: none;
+}

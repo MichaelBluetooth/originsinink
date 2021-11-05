@@ -1,0 +1,99 @@
+<a class="anchor" id="contact"></a>
+<section class="container">
+  <h1 class="text-center">Contact Us</h1>
+  <p>
+    We are here to satisfy and create all of your custom body art needs. Work is
+    done by appointment. We recommend a consultation for most pieces, and
+    require one for anything custom. Feel free to contact us with any questions,
+    comments or concerns! Either use the form below, or give us a call!
+  </p>
+  <div class="row">
+    <div class="col-md-6">
+      <ul class="contact-info text-right-sm">
+        <li>315-399-5116</li>
+        <li>jessica@originsinink.com</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <ul class="contact-info text-left">
+        <li>109 North Main Street N. Syracuse</li>
+        <li>Tuesday - Friday, 11am - 7pm</li>
+        <li>Saturday, 11am - 6pm</li>
+      </ul>
+    </div>
+  </div>
+  <form id="contact-form" (ngSubmit)="sendMail(template)" #contactForm="ngForm">
+    <p>
+      <label for="cf_name">Name</label>
+      <input
+        id="cf_name"
+        name="cf_name"
+        placeholder="Enter your name..."
+        required
+        title="Name"
+        type="text"
+        class="form-control"
+        [(ngModel)]="contactData.name"
+      />
+    </p>
+    <p>
+      <label for="cf_email">Email</label>
+      <input
+        id="cf_email"
+        name="cf_email"
+        placeholder="Email address..."
+        required
+        title="Email address"
+        type="email"
+        class="form-control"
+        [(ngModel)]="contactData.email"
+      />
+    </p>
+    <p>
+      <label for="cf_subject">Subject</label>
+      <input
+        id="cf_subject"
+        name="cf_subject"
+        placeholder="Specify subject..."
+        required
+        title="Subject"
+        type="text"
+        class="form-control"
+        [(ngModel)]="contactData.subject"
+      />
+    </p>
+    <p>
+      <label for="cf_message">Message</label>
+      <textarea
+        id="cf_message"
+        name="cf_message"
+        placeholder="Message text..."
+        required
+        rows="4"
+        class="form-control"
+        title="Message text"
+        [(ngModel)]="contactData.message"
+      ></textarea>
+    </p>
+    <p>
+      <input type="submit" value="Send message" class="btn btn-primary" />
+    </p>
+  </form>
+</section>
+
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">{{ mailTitle }}</h4>
+    <button
+      type="button"
+      class="close pull-right"
+      aria-label="Close"
+      (click)="modalRef.hide()"
+    >
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    {{ mailMessage }}
+  </div>
+</ng-template>

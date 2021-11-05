@@ -1,0 +1,30 @@
+#contact {
+  display: block;
+  position: relative;
+  top: -100px;
+}
+
+section {
+  padding-bottom: 30px;
+}
+
+.contact-info {
+  list-style: none;
+	font-weight: bold;
+}
+
+.text-right-sm {
+	text-align: left;
+}
+
+@media only screen and (min-width: 992px) {
+	.text-right-sm {
+		text-align: right;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.text-right-sm {
+		text-align: right;
+	}
+}
