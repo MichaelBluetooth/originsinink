@@ -3,7 +3,7 @@
 // Please change destination email, title and messages text settings.
 
 // Destination email address (example: john@doe.com)
-define('EMAIL_DEST', 'jessica@originsinink.com');
+define('EMAIL_DEST', 'kevin@originsinink.com');
 
 // Contact form error message
 define('ERROR_MESSAGE', 'Something went wrong, please try again.');
